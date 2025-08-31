@@ -18,7 +18,7 @@ runButton = "Serve Website"
 [[workflows.workflow]]
 name = "Serve Website"
 author = 47015097
-mode = "sequential"
+mode = "parallel"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
@@ -27,3 +27,7 @@ args = "cd ballserver-org && python -m http.server 8000 --bind 0.0.0.0"
 [[ports]]
 localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 8000
+externalPort = 8000
