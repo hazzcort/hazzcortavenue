@@ -1,0 +1,3 @@
+modules = ["web", "vue-node-20", "nodejs-22", "php-8.4", "python-3.10", "bash", "python-3.9", "nix", "angular-node-24"]
+[nix]
+channel = "stable-25_05"
